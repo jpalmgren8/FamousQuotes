@@ -60,8 +60,21 @@ public class FamousQuotes {
                     case 2:
                         int randomIndex = (int) (Math.random() * quotes.length);
                         String randomQuote = quotes[randomIndex];
+
                         System.out.println(randomQuote);
 
+                        System.out.println("");
+                        System.out.println("Would you like to read another quote?");
+                        System.out.println("(1) Yes");
+                        System.out.println("(2) No");
+                        anotherQuote = sc.nextInt();
+                        sc.nextLine();
+
+                        if (anotherQuote == 1) {
+                            quoteSelect = true;
+                        } else {
+                            quoteSelect = false;
+                        }
 
                         break;
                     case 3:
